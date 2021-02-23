@@ -28,3 +28,5 @@ Route::get('/route-example', function () {
 Route::get('/post/{firstname?}/{lastname?}', function ($firstname = "Askar", $lastname = "Daudov") {
     return $firstname . " " . $lastname;
 }) -> where ('firstname' . 'lastname', '[a-zA-Z]+' . '[a-zA-Z]+');
+
+Route::get('/posts/{id}', 'App\Http\Controllers\StudentController@show');
