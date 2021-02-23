@@ -25,6 +25,6 @@ Route::get('/route-example', function () {
     return "Web-programming: back end";
 });
 
-Route::get('/post/{firstname?}/{lastname?}', function ($firstname = "Nurdaulet", $lastname = "Daudov") {
+Route::get('/post/{firstname?}/{lastname?}', function ($firstname = "Askar", $lastname = "Daudov") {
     return $firstname . " " . $lastname;
 }) -> where ('firstname' . 'lastname', '[a-zA-Z]+' . '[a-zA-Z]+');
