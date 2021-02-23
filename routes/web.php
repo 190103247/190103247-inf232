@@ -22,7 +22,7 @@ Route::get('/test', function () {
 });
 
 Route::get('/route-example', function () {
-    return "Web-programming: back end";
+    return "Web-programming";
 });
 
 Route::get('/post/{firstname?}/{lastname?}', function ($firstname = "Askar", $lastname = "Daudov") {
